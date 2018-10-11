@@ -1,5 +1,5 @@
 // Initialize your app
-var myApp = new Framework7({
+var uniApp = new Framework7({
     modalTitle: 'My App',
     // If it is webapp, we can enable hash navigation:
     pushState: true,
@@ -29,10 +29,10 @@ var myApp = new Framework7({
 	
     // Hide and show indicator during ajax requests
     onAjaxStart: function (xhr) {
-        myApp.showIndicator();
+        uniApp.showIndicator();
     },
     onAjaxComplete: function (xhr) {
-        myApp.hideIndicator();
+        uniApp.hideIndicator();
     },
 
 });
@@ -40,7 +40,7 @@ var myApp = new Framework7({
 // Export selectors engine
 var $$ = Dom7;
 // Add view
-var mainView = myApp.addView('.view-main', {
+var mainView = uniApp.addView('.view-main', {
    domCache: true,
 });
 
@@ -50,7 +50,7 @@ var TPHotelUrl ='https://flight-images.adivaha.com/hotels';
 var TPFlightUrl ='https://apptravelpayouts.adivaha.com/flights';
 var marker='40247';
 
-myApp.onPageInit('index', function (page) {
+uniApp.onPageInit('index', function (page) {
 $$('.pageFlashLoaderKK').show();	
 setTimeout(function(){ $$('.pageFlashLoaderKK').hide('slow'); }, 3000);	
 
@@ -133,7 +133,7 @@ if(page.name=='search-hotels'){
 	var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 	
     var today =new Date();
-	var calendarRange = myApp.calendar({
+	var calendarRange = uniApp.calendar({
     input: '#appCalendar',
     dateFormat: 'M dd yyyy',
     rangePicker: true,
@@ -323,7 +323,7 @@ if(page.name=='search-hotels'){
   
   
   /*=== Auto suggetion ===*/
-  var autocompleteDropdownAjax = myApp.autocomplete({
+  var autocompleteDropdownAjax = uniApp.autocomplete({
 	opener: $$('#autocomplete-standalone-popup'),
     openIn: 'popup',
 	backOnSelect: true,
@@ -380,8 +380,8 @@ if(page.name=='search-hotels'){
   
    var hotelObject = [];
    $$('.findHotelResults').on('click', function(e){
-	   var formData = myApp.formToData('#searchHotel_frm');
-	   myApp.formStoreData('HotelRequestData',formData);
+	   var formData = uniApp.formToData('#searchHotel_frm');
+	   uniApp.formStoreData('HotelRequestData',formData);
 	  
 	 var adults =$$('#adults_0').val(); 
 	 var childs =$$('#childs_0').val();
@@ -430,7 +430,7 @@ if(page.name=='search-flights'){
     var weekday = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 	var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     var today =new Date();
-	var calendarRange = myApp.calendar({
+	var calendarRange = uniApp.calendar({
 	input: '#appCalendar',
 	dateFormat: 'M dd yyyy',
 	rangePicker: true,
@@ -455,7 +455,7 @@ if(page.name=='search-flights'){
 	   }
 	});	
    /*=== Activity Auto suggetion ===*/	
-   var autocompleteDropdownAjax = myApp.autocomplete({
+   var autocompleteDropdownAjax = uniApp.autocomplete({
 	opener: $$('#autocomplete-standalone-popup'),
 	openIn: 'popup',
 	backOnSelect: true,
@@ -501,7 +501,7 @@ if(page.name=='search-flights'){
 	}
   });
 
-  var autocompleteDropdownAjax = myApp.autocomplete({
+  var autocompleteDropdownAjax = uniApp.autocomplete({
 	opener: $$('#autocomplete-standalone-popup-to'),
 	openIn: 'popup',
 	backOnSelect: true,
