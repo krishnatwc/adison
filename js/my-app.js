@@ -46,9 +46,9 @@ var mainView = uniApp.addView('.view-main', {
 
 
 var RequestURL ='https://www.adivaha.com/demo/MobAppRequest';
-var TPHotelUrl ='https://flight-images.adivaha.com/hotels';
-var TPFlightUrl ='https://apptravelpayouts.adivaha.com/flights';
-var marker='40247';
+var TPHotelUrl ='https://hotelsapp.uni-booking.com/hotels';
+var TPFlightUrl ='https://flightsapp.uni-booking.com/flights';
+var marker='174518';
 
 uniApp.onPageInit('index', function (page) {
 $$('.pageFlashLoaderKK').show();	
