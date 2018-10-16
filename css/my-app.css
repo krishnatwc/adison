@@ -8,27 +8,15 @@
 .buttoncol{padding:35px;width:50%;height:50%;text-align:center}
 
 
-.contentblock1{
-	    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    float: left;
-    padding-top: 0rem;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 25px;
-}
-.contentblock1 li{float: left;text-align: center;margin-bottom: 20px;}
-.contentblock1 li:first-child{margin-right:12px;}
-.contentblock1 li a{font-size: 20px;color: #fff !important;text-align: center;}
+.contentblock1{justify-content: center;display: flex; }
+.contentblock1 li{}
+.contentblock1 li:first-child{margin-right: 15px;}
+.contentblock1 li a{}
 .contentblock1 li a i{
        height: 70px;
-    width: 95px;/*
-    border-radius: 15px;
-    border: 2px solid #ddd;
-    padding: 18px 0px 0px 0px;*/
+    width: 95px;
     font-size: 40px;    display: inline;}
-.buttonhomecard .card-content{width: 80%;margin: 0 auto;}
+.buttonhomecard .card-content{width: 100%;margin: 0 auto;}
 	
 .contentblock1 li a .displaysection {
     display: block;
@@ -38,7 +26,7 @@
 .buttonhomecard{    background-color: transparent;
       float: left;
     width: 100%;
-    margin: 42px 0px 0px 0px;
+    margin: 42px 0px 48px 0px;
     box-shadow: none;
 ;}
 .carBackColor{/*position: relative;top: 8em;    margin-top: 57px;*/}
@@ -593,7 +581,7 @@ margin-top: 10%;}
 .BontentBlockDrawer{padding-top: 0px !important;}	
 .BontentBlockDrawer .panel-background{background:url(../img/mobile_back.png) center no-repeat;background-size: cover;margin: 0px;min-height: 200px;position:relative;}	
 .BontentBlockDrawer .content-block p{margin: 0px;position: relative;z-index: 9;}	
-.overlayContent{position: absolute;width: 100%;height: 100%;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0,0,0,0.5);z-index: 2;cursor: pointer;}
+.overlayContent{position: absolute;width: 100%;height: 100%;top: 0;left: 0;right: 0;bottom: 0;    background-color: rgba(255, 255, 255, 0.5);z-index: 2;cursor: pointer;}
 .mobileLogo{position: absolute;top: 10em;left: 0px;right: 0pc;}	
 .panel-background .close-panel{float: right;}
 .panel-background .close-panel .fa{font-size: 25px;color: #fff;font-weight: 100;position: relative;top: 10px;}
@@ -816,7 +804,7 @@ margin-top: 10%;}
 .resultpagetop{}	
 .resultpagehotels{white-space: pre-line ! important; max-width: 284px !important;font-size: 13.5px;overflow: hidden;font-weight: 500;}
 
-.history-home-page{background-color:rgba(0,0,0,0.8);width: 95%;margin: 0 auto;clear: both;border-radius: 2px;overflow: hidden;    padding: 8px;    margin-top: 10px;}
+.history-home-page{    background-color: rgb(247, 131, 0,0.9);width: 95%;margin: 0 auto;clear: both;border-radius: 2px;overflow: hidden;    padding: 8px;    margin-top: 10px;}
 .history-home-page-main{}
 .history-home-page-main-left{    float: left;
     width: 17%;
@@ -831,13 +819,13 @@ margin-top: 10%;}
     font-size: 22px;}
 .history-home-page-main-right{float: right;width: 82%;}
 .history-home-text{    font-size: 13px;color: #fff;font-weight: 300;}
-.history-home-text1{color: #b0b0b0;font-size: 13px;}
-.history-home-text2{color: #b0b0b0;font-size: 13px;}
-.history-home-text3{color: #b0b0b0;font-size: 13px;}
-.history-home-text4{color: #b0b0b0;font-size: 13px;}
+.history-home-text1{color: #fff;font-size: 13px;}
+.history-home-text2{color: #fff;font-size: 13px;}
+.history-home-text3{color: #fff;font-size: 13px;}
+.history-home-text4{color: #fff;font-size: 13px;}
 
-.history-home-text3 .fa{color: #b0b0b0;font-size: 13px;}
-.history-home-text4 .fa{color: #b0b0b0;font-size: 13px;}
+.history-home-text3 .fa{color: #fff;font-size: 13px;}
+.history-home-text4 .fa{color: #fff;font-size: 13px;}
 
 
 
@@ -892,15 +880,14 @@ margin-top: 10%;}
 
 
 .Searchall{text-align: center;color: #fff;font-size: 17px;}
-.contentblock1 li a{
-	
-	    border: 2px solid #ddd;
+.contentblock1 li a{    border: 0px solid #ddd;
     float: left;
     margin: 0 auto;
     display: inline-block;
     padding: 30px 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 45px;
+    border-radius: 100%;
+    background-color: #f78300;
+    color: #ffffff !important;
 /*
 	
 	border-bottom-right-radius: 20px;
@@ -932,7 +919,7 @@ margin-top: 10%;}
      position: fixed;
     z-index: 9999;
     text-align: center;
-    background-color: rgba(0, 0, 0, 1);
+        background-color: rgba(255, 255, 255, 0.6);
     height: 100%;
     width: 100%;
 }
