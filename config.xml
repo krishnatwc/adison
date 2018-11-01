@@ -3,6 +3,7 @@
     <name>UNIBOOKING</name>
     <description> Find your hotels and flights.</description>
     <author email="admin@uni-booking.com" href="https://uni-booking.com/">UNIBOOKING</author>
+    <uses-permission android:name="android.permission.INTERNET" />
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
